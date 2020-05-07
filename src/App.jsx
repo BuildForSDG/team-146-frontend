@@ -1,5 +1,7 @@
 import React from 'react';
 import Login from './app/components/auth/Login';
+import { Switch, Route } from 'react-router-dom';
+import PageNotFound from './PageNotFound';
 
 function App() {
   return (
@@ -9,7 +11,10 @@ function App() {
           Navbar
         </a>
       </nav>
-      <Login />
+      <Switch>
+        <Route path="/" component={Login} exact/>
+        <Route component={PageNotFound}/>
+      </Switch>
     </div>
   );
 }
