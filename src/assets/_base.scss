@@ -1,0 +1,9 @@
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/variables';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    margin: 0;
+}
