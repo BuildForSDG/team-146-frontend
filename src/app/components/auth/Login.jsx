@@ -14,7 +14,6 @@ class Login extends React.Component {
 
   submit(e) {
     e.preventDefault();
-    console.log('LOGGED IN');
     const payload = { isLoggedIn: true };
     this.props.dispatch(login(payload));
   }
